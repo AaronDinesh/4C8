@@ -10,13 +10,18 @@
 \graphicspath{{./Images/}}
 \setlength{\marginparwidth}{2cm}
 
+\renewcommand{\today}{\ifnum\number\day<10 0\fi \number\day \space%
+\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi \space%
+\number \year}
+
 \title{
     \textbf{Lab 01}\\
     \vspace{1mm}
     {Pixel Operations}
 }
 \author{Aaron Dinesh}
-\date{January 2024}
+\date{\today}
 
 
 \begin{document}
@@ -31,7 +36,7 @@
           {\Huge \textbf{Lab 01}}\\[0.5cm]
           {\Large Pixel Operations}\\[0.4cm]
           {\Large Aaron Dinesh - 20332661}\\[0.3cm]
-          January 2024
+          \today
         \end{center}
         \vspace*{\fill}
     \end{titlepage}

@@ -146,7 +146,11 @@ xlim([0 255])
 legend({"ImageA", "ImageB"})
 exportgraphics(g, 'report/Images/KodimCumHistograms.png', 'BackgroundColor','none')
 
-transformMat = [150/182 0 0; 0 150/167 0; 0 0 150/150];
+Rw = 255*182/150;
+Gw = 255*167/150;
+Bw = 255*150/150;
+
+transformMat = [255/Rw 0 0; 0 255/Gw 0; 0 0 255/Bw];
 
 transformedImage = zeros(size(imageB));
 

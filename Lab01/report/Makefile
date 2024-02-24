@@ -10,7 +10,7 @@ report:
 	pdflatex $(DOCNAME).tex
 	# pdflatex $(DOCNAME).tex
 
-view: report
+view:
 	open $(DOCNAME).pdf
 
 clean:
