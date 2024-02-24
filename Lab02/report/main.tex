@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=2.54cm,bottom=2.54cm,left=2.54cm,right=2.54cm,headheight=16pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{ulem}
+\usepackage{listings}
+\usepackage{float}
+
+\graphicspath{{./Images/}}
+\setlength{\marginparwidth}{2cm}
+
+\renewcommand{\today}{\ifnum\number\day<10 0\fi \number\day \space%
+\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi \space%
+\number \year}
+
+\title{
+    \textbf{Lab 01}\\
+    \vspace{1mm}
+    {2D Signal Processing}
+}
+\author{Aaron Dinesh}
+\date{\today}
+
+
+\begin{document}
+    \fancyfoot{}
+    \fancyfoot[L]{Aaron Dinesh}
+    \fancyfoot[R]{20332661}
+
+
+    \begin{titlepage}
+        \vspace*{\fill}
+        \begin{center}
+          {\Huge \textbf{Lab 02}}\\[0.5cm]
+          {\Large 2D Signal Processing}\\[0.4cm]
+          {\Large Aaron Dinesh - 20332661}\\[0.3cm]
+          \today
+        \end{center}
+        \vspace*{\fill}
+    \end{titlepage}
+    \newpage
+    \input{sc-Plagerism.tex}
+    \input{sc-Sec1.tex}
+    \input{sc-Sec2.tex}
+    \input{sc-Sec3.tex}
+    \input{sc-Sec4.tex}
+\end{document}
