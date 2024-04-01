@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=2.54cm,bottom=2.54cm,left=2.54cm,right=2.54cm,headheight=16pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{ulem}
+\usepackage{listings}
+\usepackage{float}
+
+\graphicspath{{./Images/}}
+\setlength{\marginparwidth}{2cm}
+\setlength{\parindent}{20pt}
+
+%% Defining Code Colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{codeStyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=codeStyle}
+
+\renewcommand{\today}{\ifnum\number\day<10 0\fi \number\day \space%
+\ifcase \month \or January\or February\or March\or April\or May%
+\or June\or July\or August\or September\or October\or November\or December\fi \space%
+\number \year}
+
+\author{Aaron Dinesh}
+\date{\today}
+
+\begin{document}
+    \fancyfoot{}
+    \fancyfoot[L]{Aaron Dinesh}
+    \fancyfoot[R]{20332661}
+
+
+    \begin{titlepage}
+        \vspace*{\fill}
+        \begin{center}
+          {\Huge \textbf{Lab 04}}\\[0.5cm]
+          {\Large Motion}\\[0.4cm]
+          {\Large Aaron Dinesh - 20332661}\\[0.3cm]
+          \today
+        \end{center}
+        \vspace*{\fill}
+    \end{titlepage}
+    \newpage
+    \input{sc-Plagerism.tex}
+    \input{sc-Sec1.tex}
+\end{document}
